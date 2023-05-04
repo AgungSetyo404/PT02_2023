@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_fragment"
+    app:startDestination="@id/mainmenuFragment">
+
+    <fragment
+        android:id="@+id/mainmenuFragment"
+        android:name="org.d3if2082.levainventory.MainmenuFragment"
+        android:label="fragment_mainmenu"
+        tools:layout="@layout/fragment_mainmenu" />
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="org.d3if2082.levainventory.ItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="org.d3if2082.levainventory.LocationFragment"
+        android:label="fragment_location_list"
+        tools:layout="@layout/fragment_location_list" />
+</navigation>
