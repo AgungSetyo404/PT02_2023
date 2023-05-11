@@ -1,13 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainmenuFragment">
 
     <TextView
+        android:id="@+id/homeTitleTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/home_title_text"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/assetImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="42dp"
+        android:src="@drawable/cube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTitleTextView" />
+
+    <TextView
+        android:id="@+id/assetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asset_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/assetImageView"
+        app:layout_constraintStart_toStartOf="@+id/assetImageView"
+        app:layout_constraintTop_toBottomOf="@+id/assetImageView" />
+
+    <ImageView
+        android:id="@+id/locationImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="42dp"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTitleTextView" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/location_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/locationImageView"
+        app:layout_constraintStart_toStartOf="@+id/locationImageView"
+        app:layout_constraintTop_toBottomOf="@+id/locationImageView" />
+
+    <ImageView
+        android:id="@+id/reportImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="42dp"
+        android:src="@drawable/document"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assetTextView" />
+
+    <TextView
+        android:id="@+id/reportTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/reportImageView"
+        app:layout_constraintStart_toStartOf="@+id/reportImageView"
+        app:layout_constraintTop_toBottomOf="@+id/reportImageView" />
+
+    <ImageView
+        android:id="@+id/settingsImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="42dp"
+        android:src="@drawable/sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/settings_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/settingsImageView"
+        app:layout_constraintStart_toStartOf="@+id/settingsImageView"
+        app:layout_constraintTop_toBottomOf="@+id/settingsImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

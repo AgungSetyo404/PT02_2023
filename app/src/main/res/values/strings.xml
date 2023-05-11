@@ -2,4 +2,9 @@
     <string name="app_name">LevaInventory</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title_text">LevaInventory</string>
+    <string name="asset_text">Aset</string>
+    <string name="location_text">Lokasi</string>
+    <string name="settings_text">Settings</string>
+    <string name="report_text">Laporan</string>
 </resources>
